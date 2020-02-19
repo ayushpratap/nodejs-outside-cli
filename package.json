@@ -1,7 +1,7 @@
 {
-  "name": "nodejs-outside-cli",
+  "name": "outside-cli",
   "version": "1.0.0",
-  "description": "This project provides a CLI created using NodeJs to provide weather forecast",
+  "description": "This package provides a CLI created using NodeJs to provide current weather infor as well as forecast for next 5 days",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,9 +11,22 @@
     "url": "git+https://github.com/ayushpratap/nodejs-outside-cli.git"
   },
   "author": "Ayush Pratap Singh",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ayushpratap/nodejs-outside-cli/issues"
   },
-  "homepage": "https://github.com/ayushpratap/nodejs-outside-cli#readme"
+  "homepage": "https://github.com/ayushpratap/nodejs-outside-cli#readme",
+  "bin": {
+    "outside": "bin/outside"
+  },
+  "engines": {
+    "node": ">=8"  
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "minimist": "^1.2.0",
+    "ora": "^4.0.3"
+  },
+  "preferGlobal": true,
+  "keywords":["weather", "forecast", "cli"]
 }
